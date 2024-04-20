@@ -36,8 +36,8 @@ textarea {
     justify-content: center;
     align-items: center;
     background-color: #4ed2c9;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     fill: #fafafa;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -45,7 +45,7 @@ textarea {
 }
 
 .social_media a:not(:last-child){
-    margin-right: 50px;
+    margin-right: 20px;
 }
 
 .social_media a:hover .balloon{
