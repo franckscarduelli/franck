@@ -30,6 +30,28 @@ div.wrap{
     margin:0 auto;
 }
 
+.pill{
+    width: 120px;
+    height: 80px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    padding: 0.5em 1em;
+    margin: 0.25em;
+    border-radius: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background: #fafafa;
+    cursor: pointer;
+    position: relative;
+}
+
+.pill:hover{
+    background: #66fcf1;
+}
+
+
 .social-media{
     display: flex;
     justify-content: center;
