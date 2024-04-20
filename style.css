@@ -1,6 +1,6 @@
 *,
 ::after,
-::before {
+::before{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -12,25 +12,29 @@ body{
 }
 
 body,
-textarea {
+textarea{
     font-family: sans-serif;
 }
 
-.hover-text:hover { 
+.hover-text:hover{ 
     color: #66fcf1;
     cursor: pointer;
     text-decoration: none;
 }
 
-.social_media{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 30vh;
+div.wrap{
+    width:200px;
+    margin:0 auto;
 }
 
-.social_media a{
+.social-media{
+    display: grid;
+    place-items: center;
+    table-layout: fixed;
+    height: 16vh;
+}
+
+.social-media a{
     position: relative;
     display: flex;
     justify-content: center;
@@ -44,19 +48,19 @@ textarea {
     text-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
 }
 
-.social_media a:not(:last-child){
-    margin-right: 20px;
+.social-media a:not(:last-child){
+    margin-right: 0px;
 }
 
-.social_media a:hover .balloon{
+.social-media a:hover .balloon{
     top: -75px;
     opacity: 1;
 }
 
-.social_media img{height: 50px; filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.2));
+.social-media img{height: 50px; filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.2));
 }
 
-.social_media .balloon{
+.social-media .balloon{
     position: absolute;
     top: -50px;
     width: 150px;
@@ -67,7 +71,7 @@ textarea {
     filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.2))
 }
 
-.social_media .name{
+.social-media .name{
     position: relative;
     border-radius: 30px;
     width: 100%;
@@ -81,7 +85,7 @@ textarea {
     font-weight: bold;
 }
 
-.social_media .name::before{
+.social-media .name::before{
     content: "";
     position: absolute;
     display: block;
@@ -93,29 +97,42 @@ textarea {
     border-radius: 2px;
 }
 
-.social_media a.email,
-.social_media a.email .name,
-.social_media a.email .name::before{
+.social-media a.email,
+.social-media a.email .name,
+.social-media a.email .name::before{
     background-color: #4ed2c9;
 }
 
-.social_media a.instagram,
-.social_media a.instagram .name,
-.social_media a.instagram .name::before{
+.social-media a.instagram,
+.social-media a.instagram .name,
+.social-media a.instagram .name::before{
     background-color: #d05ed4;
 }
 
-.social_media a.linkedin,
-.social_media a.linkedin .name,
-.social_media a.linkedin .name::before{
+.social-media a.linkedin,
+.social-media a.linkedin .name,
+.social-media a.linkedin .name::before{
     background-color: #70bfec;
 }
 
-.social_media a.whatsapp,
-.social_media a.whatsapp .name,
-.social_media a.whatsapp .name::before{
+.social-media a.whatsapp,
+.social-media a.whatsapp .name,
+.social-media a.whatsapp .name::before{
     background-color: #5ddd79;
 }
+
+/* Teste de colocar icones em grid ------------------------------------------------ */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.grid-item {
+   height: //Whatever you want them to be
+}
+
+/* Formulario de Contato --------------------------------------------------------- */
 
 .container{
     display: flex;
