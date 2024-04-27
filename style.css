@@ -26,11 +26,11 @@ div.wrap{
     border-radius: 50%;
     border: none;
     outline: none;
-    background: #66fcf1;
+    background: #fafafa;
     cursor: pointer;
 }
 .btn:hover{
-    background: #4ed2c9;
+    background: #66fcf1;
 }
 .btn a{
     position: relative;
